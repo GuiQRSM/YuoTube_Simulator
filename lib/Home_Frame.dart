@@ -21,6 +21,10 @@ class _HomeFrameState extends State<HomeFrame> {
         title: Text("YouTubeSimulator"),
         actions: <Widget>[
           IconButton(
+            icon: Icon(Icons.search_rounded),
+            onPressed: (){},
+          ),
+          IconButton(
             icon: Icon(
               Icons.videocam_rounded,
             ),
