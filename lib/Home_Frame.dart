@@ -19,6 +19,9 @@ class _HomeFrameState extends State<HomeFrame> {
       appBar: AppBar(
         backgroundColor: pickColor,
         title: Text("YouTubeSimulator"),
+        actions: <Widget>[
+
+        ],
       ),
       body: Container(),
     );
