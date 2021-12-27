@@ -20,6 +20,7 @@ class _HomeFrameState extends State<HomeFrame> {
         backgroundColor: pickColor,
         title: Text("YouTubeSimulator"),
       ),
+      body: Container(),
     );
   }
 }
