@@ -20,7 +20,7 @@ class _HomeFrameState extends State<HomeFrame> {
         backgroundColor: pickColor,
         title: Text("YouTubeSimulator"),
         actions: <Widget>[
-
+          IconButton(),
         ],
       ),
       body: Container(),
