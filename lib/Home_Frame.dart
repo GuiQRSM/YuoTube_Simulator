@@ -9,9 +9,17 @@ class HomeFrame extends StatefulWidget {
   _HomeFrameState createState() => _HomeFrameState();
 }
 
+var pickColor = Color.fromRGBO(212, 25, 15, 1);
+
 class _HomeFrameState extends State<HomeFrame> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: pickColor,
+        title: Text("YouTubeSimulator"),
+      ),
+    );
   }
 }
