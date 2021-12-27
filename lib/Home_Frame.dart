@@ -18,7 +18,10 @@ class _HomeFrameState extends State<HomeFrame> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: pickColor,
-        title: Text("YouTubeSimulator"),
+        title: Image.asset(
+          "imgs/alternative_yt.png",
+          height: 30,
+        ),
         actions: <Widget>[
           IconButton(
             icon: Icon(
