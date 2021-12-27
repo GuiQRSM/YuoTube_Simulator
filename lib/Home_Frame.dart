@@ -30,6 +30,10 @@ class _HomeFrameState extends State<HomeFrame> {
             ),
             onPressed: (){},
           ),
+          IconButton(
+            icon: Icon(Icons.account_circle_rounded),
+            onPressed: (){},
+          )
         ],
       ),
       body: Container(),
