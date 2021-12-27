@@ -21,18 +21,31 @@ class _HomeFrameState extends State<HomeFrame> {
         title: Text("YouTubeSimulator"),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.search_rounded),
-            onPressed: (){},
+            icon: Icon(
+              Icons.search_rounded,
+            color: Colors.black,
+            ),
+            onPressed: (){
+              print("Ícone de pesquisa acionado!");
+            },
           ),
           IconButton(
             icon: Icon(
               Icons.videocam_rounded,
+              color: Colors.black,
             ),
-            onPressed: (){},
+            onPressed: (){
+              print("Ícone de videoCAM acionado!");
+            },
           ),
           IconButton(
-            icon: Icon(Icons.account_circle_rounded),
-            onPressed: (){},
+            icon: Icon(
+                Icons.account_circle_rounded,
+                color: Colors.black,
+            ),
+            onPressed: (){
+              print("Ícone de conta acionado!");
+            },
           )
         ],
       ),
