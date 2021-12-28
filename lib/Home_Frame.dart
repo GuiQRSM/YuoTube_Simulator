@@ -68,6 +68,11 @@ class _HomeFrameState extends State<HomeFrame> {
           ),
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+          items: [
+
+          ],
+      ),
     );
   }
 }
