@@ -13,6 +13,7 @@ class _InHighState extends State<InHigh> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: pickColor,
           title: Image.asset(

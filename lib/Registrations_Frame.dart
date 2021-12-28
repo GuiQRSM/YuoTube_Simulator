@@ -13,6 +13,7 @@ class _RegistrationsState extends State<Registrations> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: pickColor,
         title: Image.asset(
