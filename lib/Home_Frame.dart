@@ -55,6 +55,7 @@ class _HomeFrameState extends State<HomeFrame> {
       ),
       body: Container(
         width: double.infinity,
+        height: double.infinity,
         child: SingleChildScrollView(
           padding: EdgeInsets.all(16),
           child: Center(
@@ -69,19 +70,44 @@ class _HomeFrameState extends State<HomeFrame> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: pickColor,
           items: [
             BottomNavigationBarItem(
-              title: Text("Home"),
-              icon: Icon(Icons.home),
+              title: Text(
+                  "Home",
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.w700
+              ),),
+              icon: Icon(
+                  Icons.home,
+              color: Colors.black,
+              ),
             ),
             BottomNavigationBarItem(
-              title: Text("Em alta"),
-              icon: Icon(Icons.whatshot_sharp),
+              title: Text(
+                  "Em alta",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w700
+                ),),
+              icon: Icon(
+                  Icons.whatshot_sharp,
+                  color: Colors.black
+              ),
             ),
             BottomNavigationBarItem(
-              title: Text("Inscrições"),
-              icon: Icon(Icons.app_registration_rounded),
-            )
+              title: Text(
+                  "Inscrições",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w700
+                ),),
+              icon: Icon(
+                  Icons.app_registration_rounded,
+                  color: Colors.black,
+              ),
+            ),
           ],
       ),
     );
