@@ -110,6 +110,19 @@ class _HomeFrameState extends State<HomeFrame> {
                   color: Colors.black,
               ),
             ),
+            BottomNavigationBarItem(
+              title: Text(
+                  "Biblioteca",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w700
+                ),
+              ),
+              icon: Icon(
+                  Icons.video_library_rounded,
+              color: Colors.black,
+              ),
+            ),
           ],
       ),
     );
