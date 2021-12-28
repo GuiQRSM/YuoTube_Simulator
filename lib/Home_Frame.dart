@@ -74,6 +74,10 @@ class _HomeFrameState extends State<HomeFrame> {
               title: Text("Home"),
               icon: Icon(Icons.home),
             ),
+            BottomNavigationBarItem(
+              title: Text("Em alta"),
+              icon: Icon(Icons.whatshot_sharp),
+            ),
           ],
       ),
     );
