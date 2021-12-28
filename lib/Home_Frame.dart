@@ -21,6 +21,7 @@ class _HomeFrameState extends State<HomeFrame> {
         title: Image.asset(
           "imgs/alternative_yt.png",
           height: 30,
+          width: 100,
         ),
         actions: <Widget>[
           IconButton(
