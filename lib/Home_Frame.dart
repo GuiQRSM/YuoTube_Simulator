@@ -62,22 +62,9 @@ class _HomeFrameState extends State<HomeFrame> {
           )
         ],
       ),
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        child: SingleChildScrollView(
-          padding: EdgeInsets.all(16),
-          child: Center(
-            child: Text(
-              "Home",
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.w600,
-                color: Colors.black,
-              ),),
-          ),
-        ),
-      ),
+      body: frames[
+        _actualIndex
+      ],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _actualIndex,
         onTap: (index){
