@@ -10,6 +10,7 @@ class HomeFrame extends StatefulWidget {
 }
 
 var pickColor = Color.fromRGBO(212, 25, 15, 1);
+var _actualIndex;
 
 class _HomeFrameState extends State<HomeFrame> {
   @override
@@ -70,10 +71,15 @@ class _HomeFrameState extends State<HomeFrame> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 0,
-        type: BottomNavigationBarType.fixed,
+        currentIndex: _actualIndex,
+        onTap: (index){
+          setState(() {
+            _actualIndex = index;
+          });
+        },
         backgroundColor: pickColor,
-          fixedColor: Colors.grey,
+        type: BottomNavigationBarType.fixed,
+          fixedColor: Colors.blueGrey,
           items: [
             BottomNavigationBarItem(
               title: Text(
