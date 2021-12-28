@@ -50,6 +50,21 @@ class _RegistrationsState extends State<Registrations> {
           ),
         ],
       ),
+      body: Container(
+        width: double.infinity,
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(16),
+          child: Center(
+            child: Text(
+              "Inscrições",
+              style: TextStyle(
+                fontSize: 22,
+                fontWeight: FontWeight.w600,
+                color: Colors.black,
+              ),),
+          ),
+        ),
+      ),
     );
   }
 }
