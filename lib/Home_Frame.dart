@@ -70,7 +70,10 @@ class _HomeFrameState extends State<HomeFrame> {
       ),
       bottomNavigationBar: BottomNavigationBar(
           items: [
-
+            BottomNavigationBarItem(
+              title: Text("Home"),
+              icon: Icon(Icons.home),
+            ),
           ],
       ),
     );
