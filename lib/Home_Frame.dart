@@ -15,6 +15,14 @@ var _actualIndex;
 class _HomeFrameState extends State<HomeFrame> {
   @override
   Widget build(BuildContext context) {
+
+    List<Widget> frames = [
+      Text("Home"),
+      Text("Em alta"),
+      Text("Inscrições"),
+      Text("Biblioteca"),
+    ];
+
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
