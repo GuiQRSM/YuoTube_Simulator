@@ -53,7 +53,21 @@ class _HomeFrameState extends State<HomeFrame> {
           )
         ],
       ),
-      body: Container(),
+      body: Container(
+        width: double.infinity,
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(16),
+          child: Center(
+            child: Text(
+              "Home",
+              style: TextStyle(
+                fontSize: 22,
+                fontWeight: FontWeight.w600,
+                color: Colors.black,
+              ),),
+          ),
+        ),
+      ),
     );
   }
 }
