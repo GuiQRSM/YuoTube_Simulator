@@ -78,6 +78,10 @@ class _HomeFrameState extends State<HomeFrame> {
               title: Text("Em alta"),
               icon: Icon(Icons.whatshot_sharp),
             ),
+            BottomNavigationBarItem(
+              title: Text("Inscrições"),
+              icon: Icon(Icons.app_registration_rounded),
+            )
           ],
       ),
     );
