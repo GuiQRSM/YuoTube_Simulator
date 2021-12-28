@@ -71,6 +71,7 @@ class _HomeFrameState extends State<HomeFrame> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: pickColor,
+          fixedColor: Colors.grey,
           items: [
             BottomNavigationBarItem(
               title: Text(
