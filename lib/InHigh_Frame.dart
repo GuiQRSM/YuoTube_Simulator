@@ -47,9 +47,24 @@ class _InHighState extends State<InHigh> {
               onPressed: (){
                 print("Ícone de conta acionado!");
               },
-            )
+            ),
           ],
         ),
+      body: Container(
+        width: double.infinity,
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(16),
+          child: Center(
+            child: Text(
+                "Em alta",
+            style: TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.w600,
+              color: Colors.black,
+            ),),
+          ),
+        ),
+      ),
     );
   }
 }
