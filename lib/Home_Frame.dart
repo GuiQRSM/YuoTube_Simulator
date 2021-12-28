@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:youtube/Frames/InHigh_Frame.dart';
 import 'dart:convert';
+
+import 'package:youtube/Frames/Inicial_Frame.dart';
+import 'package:youtube/Frames/Library_Frame.dart';
+import 'package:youtube/Frames/Registrations_Frame.dart';
 
 class HomeFrame extends StatefulWidget {
   const HomeFrame({Key? key}) : super(key: key);
@@ -17,10 +22,10 @@ class _HomeFrameState extends State<HomeFrame> {
   Widget build(BuildContext context) {
 
     List<Widget> frames = [
-      Text("Home"),
-      Text("Em alta"),
-      Text("Inscrições"),
-      Text("Biblioteca"),
+      Inicio(),
+      InHigh(),
+      Registrations(),
+      Library(),
     ];
 
     return Scaffold(
