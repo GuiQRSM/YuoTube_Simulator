@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:youtube/Frames/InHigh_Frame.dart';
 import 'dart:convert';
-
-import 'package:youtube/Frames/Inicial_Frame.dart';
-import 'package:youtube/Frames/Library_Frame.dart';
+import 'Frames/Inicial_Frame.dart';
+import 'package:youtube/Frames/InHigh_Frame.dart';
 import 'package:youtube/Frames/Registrations_Frame.dart';
+import 'package:youtube/Frames/Library_Frame.dart';
+
 
 class HomeFrame extends StatefulWidget {
   const HomeFrame({Key? key}) : super(key: key);
@@ -15,7 +15,7 @@ class HomeFrame extends StatefulWidget {
 }
 
 var pickColor = Color.fromRGBO(212, 25, 15, 1);
-var _actualIndex;
+var _actualIndex = 4;
 
 class _HomeFrameState extends State<HomeFrame> {
   @override
@@ -67,19 +67,17 @@ class _HomeFrameState extends State<HomeFrame> {
           )
         ],
       ),
-      body: frames[
-        _actualIndex
-      ],
+      body: frames[_actualIndex],
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _actualIndex,
+        backgroundColor: pickColor,
+        fixedColor: Colors.black,
+        type: BottomNavigationBarType.fixed,
         onTap: (index){
           setState(() {
             _actualIndex = index;
           });
         },
-        backgroundColor: pickColor,
-        type: BottomNavigationBarType.fixed,
-          fixedColor: Colors.blueGrey,
+        currentIndex: _actualIndex,
           items: [
             BottomNavigationBarItem(
               title: Text(
