@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'Frames/Inicial_Frame.dart';
 import 'package:youtube/Frames/InHigh_Frame.dart';
+import 'package:youtube/Frames/Inicial_Frame.dart';
 import 'package:youtube/Frames/Registrations_Frame.dart';
 import 'package:youtube/Frames/Library_Frame.dart';
 
@@ -15,7 +15,7 @@ class HomeFrame extends StatefulWidget {
 }
 
 var pickColor = Color.fromRGBO(212, 25, 15, 1);
-var _actualIndex = 4;
+var _actualIndex = 3;
 
 class _HomeFrameState extends State<HomeFrame> {
   @override
