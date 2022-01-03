@@ -23,7 +23,9 @@ class DataYT {
     response  = await http.get(url);
 
     if(response.statusCode == 200){
-      print("Sucesso na requisição!");
+      print("Sucesso na requisição!: " + response.body);
+      Map<String, dynamic> itemVideo = json.decode(response.body);
+
     }
 
   }
