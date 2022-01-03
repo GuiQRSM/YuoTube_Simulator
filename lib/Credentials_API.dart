@@ -10,7 +10,16 @@ class DataYT {
   void searchVideo (String search) async {
 
     http.Response response;
-    var url = Uri.parse(BASE_URL + "search");
+    var url = Uri.parse(
+        BASE_URL + "search"
+            "?part=snippet"
+            "&type=video"
+            "&channelId=${ID_CHANNEL}"
+            "&maxResults=5"
+            "&order=date"
+            "&key=${KEY_YT_API}"
+            "&q=${search}"
+    );
     response  = await http.get(url);
 
   }
