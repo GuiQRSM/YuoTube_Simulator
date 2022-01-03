@@ -9,6 +9,10 @@ class DataYT {
 
   void searchVideo (String search) async {
 
+    http.Response response;
+    var url = Uri.parse(BASE_URL + "");
+    response  = await http.get(url);
+
   }
 
 }
