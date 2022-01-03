@@ -15,7 +15,7 @@ class DataYT {
             "?part=snippet"
             "&type=video"
             "&channelId=${ID_CHANNEL}"
-            "&maxResults=5"
+            "&maxResults=20"
             "&order=date"
             "&key=${KEY_YT_API}"
             "&q=${search}"
@@ -23,8 +23,9 @@ class DataYT {
     response  = await http.get(url);
 
     if(response.statusCode == 200){
-      print("Sucesso na requisição!: " + response.body);
-      Map<String, dynamic> itemVideo = json.decode(response.body);
+      Map<String,dynamic> itemVideo = json.decode(response.body);
+      print("Dados do GET: " + itemVideo["items"] [1] ["snippet"] ["thumbnails"] ["default"] ["url"].toString());
+      //print("Dados do GET: " + response.body);
 
     }
 
