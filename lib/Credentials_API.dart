@@ -22,6 +22,11 @@ class DataYT {
     );
     response  = await http.get(url);
 
+    if(response.statusCode == 200){
+      print("Sucesso na requisição!");
+    }
+
   }
 
 }
+
