@@ -1,5 +1,6 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'package:youtube/Models/Video_model.dart';
 
 const KEY_YT_API = "AIzaSyCknUzdop22JPUPvkdt4ztQXdfzmBJhVKE";
 const ID_CHANNEL = "UCVHFbqXqoYvEWM1Ddxl0QDg";
@@ -24,8 +25,9 @@ class DataYT {
 
     if(response.statusCode == 200){
       Map<String,dynamic> itemVideo = json.decode(response.body);
-      //print("Dados do GET: " + itemVideo["items"] [1] ["snippet"] ["thumbnails"] ["default"] ["url"].toString());
-      //print("Dados do GET: " + response.body);
+
+      List<VideoModel> modelPlay = itemVideo["items"];
+
 
     }
 
@@ -33,3 +35,5 @@ class DataYT {
 
 }
 
+//print("Dados do GET: " + itemVideo["items"] [1] ["snippet"] ["thumbnails"] ["default"] ["url"].toString());
+//print("Dados do GET: " + response.body);
