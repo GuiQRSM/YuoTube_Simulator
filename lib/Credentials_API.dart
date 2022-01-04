@@ -13,10 +13,10 @@ class DataYT {
     var url = Uri.parse(
         BASE_URL + "search"
             "?part=snippet"
-            "&type=video"
             "&channelId=${ID_CHANNEL}"
-            "&maxResults=20"
             "&order=date"
+            "&type=video"
+            "&maxResults=20"
             "&key=${KEY_YT_API}"
             "&q=${search}"
     );
@@ -24,7 +24,7 @@ class DataYT {
 
     if(response.statusCode == 200){
       Map<String,dynamic> itemVideo = json.decode(response.body);
-      print("Dados do GET: " + itemVideo["items"] [1] ["snippet"] ["thumbnails"] ["default"] ["url"].toString());
+      //print("Dados do GET: " + itemVideo["items"] [1] ["snippet"] ["thumbnails"] ["default"] ["url"].toString());
       //print("Dados do GET: " + response.body);
 
     }
