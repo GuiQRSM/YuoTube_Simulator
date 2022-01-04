@@ -28,7 +28,7 @@ class DataYT {
 
       List<VideoModel> modelPlay = itemVideo["items"].map<VideoModel>(
           (map){
-            return VideoModel.typrJson(map);
+            return VideoModel.typeJson(map);
           }
       );
 

@@ -11,15 +11,23 @@ class VideoModel {
 
   static converter(Map<String,dynamic> json){
     return VideoModel(
-        channel: '',
-        id: '',
-        title: '',
+        channel: json ["snippet"] ["channelId"],
+        id: json ["id"] ["videoId"],
+        title: json ["snippet"] ["title"],
         desc: '',
-        pic: ''
+        pic: json ["snippet"] ["thumbnails"] ["high"] ["url"],
     );
   }
 
- //VideoModel.typrJson(Map<String,dynamic> json){
+ factory VideoModel.typeJson(Map<String,dynamic> json){
+    return VideoModel(
+      channel: json ["snippet"] ["channelId"],
+      id: json ["id"] ["videoId"],
+      title: json ["snippet"] ["title"],
+      desc: '',
+      pic: json ["snippet"] ["thumbnails"] ["high"] ["url"],
+    );
+ }
 
 }
 
