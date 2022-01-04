@@ -27,7 +27,9 @@ class DataYT {
       Map<String,dynamic> itemVideo = json.decode(response.body);
 
       List<VideoModel> modelPlay = itemVideo["items"];
-
+      for(var runner in itemVideo["items"]){
+        print(runner.toString());
+      }
 
     }
 
