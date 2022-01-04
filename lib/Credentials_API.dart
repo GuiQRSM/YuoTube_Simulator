@@ -30,7 +30,7 @@ class DataYT {
           (map){
             return VideoModel.typeJson(map);
           }
-      );
+      ).toList();
 
     }
 
