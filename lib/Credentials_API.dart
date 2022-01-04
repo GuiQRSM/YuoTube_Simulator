@@ -26,7 +26,11 @@ class DataYT {
     if(response.statusCode == 200){
       Map<String,dynamic> itemVideo = json.decode(response.body);
 
-      List<VideoModel> modelPlay = itemVideo["items"].map<VideoModel>();
+      List<VideoModel> modelPlay = itemVideo["items"].map<VideoModel>(
+          (map){
+
+          }
+      );
 
     }
 
