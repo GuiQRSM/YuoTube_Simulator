@@ -9,8 +9,17 @@ class VideoModel {
 
   VideoModel({required this.id, required this.title, required this.desc, required this.pic, required this.channel});
 
- VideoModel.typrJson(Map<String,dynamic> json){
+  static converter(Map<String,dynamic> json){
+    return VideoModel(
+        channel: '',
+        id: '',
+        title: '',
+        desc: '',
+        pic: ''
+    );
+  }
+
+ //VideoModel.typrJson(Map<String,dynamic> json){
 
 }
 
-}
