@@ -66,7 +66,10 @@ class _HomeFrameState extends State<HomeFrame> {
           )
         ],
       ),
-      body: frames[_actualIndex],
+      body: Container(
+        padding: EdgeInsets.all(12),
+        child: frames[_actualIndex],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: pickColor,
         fixedColor: Colors.black,
