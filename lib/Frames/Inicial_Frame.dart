@@ -25,7 +25,27 @@ class _InicioState extends State<Inicio> {
 
     return FutureBuilder<List<VideoModel>>(
         future: _getVideos(),
-        builder: (){
+        builder: (context, snapshot){
+
+          var widget;
+
+          switch(snapshot.connectionState){
+            case ConnectionState.waiting :
+              widget = Center(
+                child: CircularProgressIndicator(
+                  color: pickColor,
+                ),
+              );
+              break;
+            case ConnectionState.done :
+              if(snapshot.hasError){
+                print("Erro no endereço http!");
+              }else{
+
+              }
+          }
+
+          return widget;
 
         },
     );
