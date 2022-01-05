@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:youtube/Models/Video_model.dart';
 
 const KEY_YT_API = "AIzaSyCknUzdop22JPUPvkdt4ztQXdfzmBJhVKE";
-const ID_CHANNEL = "UCVHFbqXqoYvEWM1Ddxl0QDg";
+const ID_CHANNEL = "UCn_brbCS3S2NJP5NueYAvyg";
 const BASE_URL = "https://www.googleapis.com/youtube/v3/";
 
 class DataYT {
@@ -32,11 +32,13 @@ class DataYT {
           }
       ).toList();
 
+      for(var run in modelPlay){
+        print(run.pic.toString());
+      }
+      //print("Resultados: " + modelPlay.toString());
     }
 
   }
 
 }
 
-//print("Dados do GET: " + itemVideo["items"] [1] ["snippet"] ["thumbnails"] ["default"] ["url"].toString());
-//print("Dados do GET: " + response.body);

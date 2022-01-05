@@ -6,9 +6,6 @@ import 'package:youtube/Frames/Inicial_Frame.dart';
 import 'package:youtube/Frames/Registrations_Frame.dart';
 import 'package:youtube/Frames/Library_Frame.dart';
 
-
-
-
 class HomeFrame extends StatefulWidget {
   const HomeFrame({Key? key}) : super(key: key);
 
