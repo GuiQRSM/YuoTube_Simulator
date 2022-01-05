@@ -15,15 +15,13 @@ class _InicioState extends State<Inicio> {
 
   void _getVideos() async {
 
-
+    DataYT data = DataYT();
+    data.searchVideo("");
 
   }
 
   @override
   Widget build(BuildContext context) {
-
-    DataYT data = DataYT();
-    data.searchVideo("");
 
     return FutureBuilder<List<VideoModel>>(
         future: ,
