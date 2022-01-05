@@ -42,7 +42,21 @@ class _InicioState extends State<Inicio> {
             case ConnectionState.done :
               if(snapshot.hasData){
                 return ListView.separated(
-                    itemBuilder: itemBuilder,
+                    itemBuilder: (context, index){
+
+                      return Column(
+                        children: <Widget>[
+                          Container(
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: NetworkImage();
+                          ),
+                        ),
+                      ),
+                        ],
+                      );
+
+                    },
                     separatorBuilder: (context, index) => Divider(
                       height: 4,
                       color: pickColor,

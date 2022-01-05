@@ -67,7 +67,7 @@ class _HomeFrameState extends State<HomeFrame> {
         ],
       ),
       body: Container(
-        padding: EdgeInsets.all(12),
+        padding: EdgeInsets.all(10),
         child: frames[_actualIndex],
       ),
       bottomNavigationBar: BottomNavigationBar(
