@@ -44,12 +44,16 @@ class _InicioState extends State<Inicio> {
                 return ListView.separated(
                     itemBuilder: (context, index){
 
+                      List<VideoModel> indexVideo = snapshot.data!;
+                      VideoModel finalGet = indexVideo[index];
+
                       return Column(
                         children: <Widget>[
                           Container(
+                            height: 200,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: NetworkImage();
+                            image: NetworkImage(finalGet.pic),
                           ),
                         ),
                       ),
