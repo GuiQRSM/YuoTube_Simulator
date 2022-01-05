@@ -13,7 +13,7 @@ var pickColor = Color.fromRGBO(212, 25, 15, 1);
 
 class _InicioState extends State<Inicio> {
 
-  void _getVideos() {
+  _getVideos() {
 
     DataYT data = DataYT();
    return data.searchVideo("");
@@ -24,7 +24,7 @@ class _InicioState extends State<Inicio> {
   Widget build(BuildContext context) {
 
     return FutureBuilder<List<VideoModel>>(
-        future: ,
+        future: _getVideos(),
         builder: (){
 
         },
