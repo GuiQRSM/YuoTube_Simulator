@@ -8,7 +8,7 @@ const BASE_URL = "https://www.googleapis.com/youtube/v3/";
 
 class DataYT {
 
-  void searchVideo (String search) async {
+  Future<List<VideoModel>> searchVideo (String search) async {
 
     http.Response response;
     var url = Uri.parse(
@@ -32,13 +32,12 @@ class DataYT {
           }
       ).toList();
 
-      for(var run in modelPlay){
-        print(run.pic.toString());
+      return modelPlay;
+
       }
-      //print("Resultados: " + modelPlay.toString());
+
     }
 
   }
 
-}
 
