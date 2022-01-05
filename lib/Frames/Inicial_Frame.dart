@@ -53,6 +53,7 @@ class _InicioState extends State<Inicio> {
                             height: 200,
                         decoration: BoxDecoration(
                           image: DecorationImage(
+                            fit: BoxFit.cover,
                             image: NetworkImage(finalGet.pic),
                           ),
                         ),
