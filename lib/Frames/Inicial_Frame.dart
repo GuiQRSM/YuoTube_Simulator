@@ -13,10 +13,10 @@ var pickColor = Color.fromRGBO(212, 25, 15, 1);
 
 class _InicioState extends State<Inicio> {
 
-  void _getVideos() async {
+  void _getVideos() {
 
     DataYT data = DataYT();
-    data.searchVideo("");
+   return data.searchVideo("");
 
   }
 
