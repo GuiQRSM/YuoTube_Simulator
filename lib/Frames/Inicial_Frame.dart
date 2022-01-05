@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:youtube/Frames/InHigh_Frame.dart';
 import 'package:youtube/Models/Video_model.dart';
 import '../Credentials_API.dart';
 
@@ -42,7 +43,10 @@ class _InicioState extends State<Inicio> {
               if(snapshot.hasData){
                 return ListView.separated(
                     itemBuilder: itemBuilder,
-                    separatorBuilder: separatorBuilder,
+                    separatorBuilder: (context, index) => Divider(
+                      height: 4,
+                      color: pickColor,
+                    ),
                     itemCount: snapshot.data!.length
                 );
               }else{
