@@ -12,6 +12,13 @@ class Inicio extends StatefulWidget {
 var pickColor = Color.fromRGBO(212, 25, 15, 1);
 
 class _InicioState extends State<Inicio> {
+
+  void _getVideos() async {
+
+
+
+  }
+
   @override
   Widget build(BuildContext context) {
 
