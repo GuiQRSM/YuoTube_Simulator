@@ -35,7 +35,7 @@ class DataYT {
       return modelPlay;
 
       }
-
+    return searchVideo(search);
     }
 
   }

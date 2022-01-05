@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:youtube/Models/Video_model.dart';
 import '../Credentials_API.dart';
 
@@ -38,15 +39,27 @@ class _InicioState extends State<Inicio> {
               );
               break;
             case ConnectionState.done :
-              if(snapshot.hasError){
-                print("Erro no endereço http!");
+              if(snapshot.hasData){
+                return ListView.builder(
+                    itemCount: snapshot.data!.length,
+                    itemBuilder: (){
+
+                    },
+                )
               }else{
-
+                widget = Center(
+                  child: Text(
+                      "Falha na requisição dos dados",
+                      style: TextStyle(
+                      fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                        color: pickColor,
+                  ),),
+                );
               }
+
           }
-
           return widget;
-
         },
     );
   }
