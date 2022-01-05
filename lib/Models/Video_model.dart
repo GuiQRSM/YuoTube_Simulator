@@ -21,7 +21,7 @@ class VideoModel {
 
  factory VideoModel.typeJson(Map<String,dynamic> json){
     return VideoModel(
-      channel: json ["snippet"] ["channelId"],
+      channel: json ["snippet"] ["channelTitle"],
       id: json ["id"] ["videoId"],
       title: json ["snippet"] ["title"],
       desc: '',

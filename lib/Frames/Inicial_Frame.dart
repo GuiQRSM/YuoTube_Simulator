@@ -58,6 +58,23 @@ class _InicioState extends State<Inicio> {
                           ),
                         ),
                       ),
+                        ListTile(
+                      title: Text(
+                          "${finalGet.title}",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.black
+                      ),),
+                        subtitle: Text(
+                          "${finalGet.channel}",
+                          style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.black
+                          ),
+                        ),
+                      ),
                         ],
                       );
 
