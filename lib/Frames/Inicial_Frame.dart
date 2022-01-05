@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube/Models/Video_model.dart';
 import '../Credentials_API.dart';
 
 class Inicio extends StatefulWidget {
@@ -17,22 +18,11 @@ class _InicioState extends State<Inicio> {
     DataYT data = DataYT();
     data.searchVideo("");
 
-    return Scaffold(
-      body: Container(
-        width: double.infinity,
-        child: SingleChildScrollView(
-          padding: EdgeInsets.all(16),
-          child: Center(
-            child: Text(
-              "Inicio",
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.w600,
-                color: Colors.black,
-              ),),
-          ),
-        ),
-      ),
+    return FutureBuilder<List<VideoModel>>(
+        future: ,
+        builder: (){
+
+        },
     );
   }
 }
