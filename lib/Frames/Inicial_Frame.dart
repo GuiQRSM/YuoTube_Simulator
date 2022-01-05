@@ -40,12 +40,11 @@ class _InicioState extends State<Inicio> {
               break;
             case ConnectionState.done :
               if(snapshot.hasData){
-                return ListView.builder(
-                    itemCount: snapshot.data!.length,
-                    itemBuilder: (){
-
-                    },
-                )
+                return ListView.separated(
+                    itemBuilder: itemBuilder,
+                    separatorBuilder: separatorBuilder,
+                    itemCount: snapshot.data!.length
+                );
               }else{
                 widget = Center(
                   child: Text(
