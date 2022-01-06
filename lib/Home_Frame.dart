@@ -37,16 +37,18 @@ class _HomeFrameState extends State<HomeFrame> {
           width: 100,
         ),
         actions: <Widget>[
+
           IconButton(
             icon: Icon(
               Icons.search_rounded,
-            color: Colors.black,
+              color: Colors.black,
             ),
             onPressed: (){
-              print("Ícone de pesquisa acionado!");
+
             },
           ),
-          IconButton(
+
+          /*IconButton(
             icon: Icon(
               Icons.videocam_rounded,
               color: Colors.black,
@@ -63,7 +65,8 @@ class _HomeFrameState extends State<HomeFrame> {
             onPressed: (){
               print("Ícone de conta acionado!");
             },
-          )
+          ),*/
+
         ],
       ),
       body: Container(
