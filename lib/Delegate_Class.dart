@@ -12,7 +12,7 @@ class DelegateCustom extends SearchDelegate<String> {
             color: Colors.black,
         ),
         onPressed: (){
-
+          query = "";
         },
       ),
     ];
