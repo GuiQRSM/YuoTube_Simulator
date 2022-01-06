@@ -13,7 +13,7 @@ class DelegateCustom extends SearchDelegate<String> {
         onPressed: (){
 
         },
-      );
+      ),
     ];
   }
 

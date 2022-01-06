@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:youtube/Delegate_Class.dart';
 import 'dart:convert';
 import 'package:youtube/Frames/InHigh_Frame.dart';
 import 'package:youtube/Frames/Inicial_Frame.dart';
@@ -46,7 +47,7 @@ class _HomeFrameState extends State<HomeFrame> {
             onPressed: (){
               showSearch(
                   context: context,
-                  delegate: delegate,
+                  delegate: DelegateCustom(),
               );
             },
           ),
