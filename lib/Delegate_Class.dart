@@ -4,8 +4,9 @@ class DelegateCustom extends SearchDelegate<String> {
 
   @override
   List<Widget>? buildActions(BuildContext context) {
+    return [
 
-    throw UnimplementedError();
+    ];
   }
 
   @override
