@@ -44,7 +44,10 @@ class _HomeFrameState extends State<HomeFrame> {
               color: Colors.black,
             ),
             onPressed: (){
-
+              showSearch(
+                  context: context,
+                  delegate: delegate,
+              );
             },
           ),
 
