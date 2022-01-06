@@ -5,6 +5,7 @@ class DelegateCustom extends SearchDelegate<String> {
   @override
   List<Widget>? buildActions(BuildContext context) {
     return [
+
       IconButton(
         icon: Icon(
             Icons.clear_rounded,
@@ -19,20 +20,29 @@ class DelegateCustom extends SearchDelegate<String> {
 
   @override
   Widget? buildLeading(BuildContext context) {
-
-    throw UnimplementedError();
+    var widget = IconButton(
+      icon: Icon(
+        Icons.arrow_back,
+        color: Colors.black,
+      ),
+      onPressed: (){
+        close(
+            context,
+            "",
+        );
+      },
+    );
+    return widget;
   }
 
   @override
   Widget buildResults(BuildContext context) {
-
-    throw UnimplementedError();
+    return Container();
   }
 
   @override
   Widget buildSuggestions(BuildContext context) {
-
-    throw UnimplementedError();
+    return Container();
   }
 
 }
