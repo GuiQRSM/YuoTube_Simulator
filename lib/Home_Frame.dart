@@ -44,11 +44,12 @@ class _HomeFrameState extends State<HomeFrame> {
               Icons.search_rounded,
               color: Colors.black,
             ),
-            onPressed: (){
-              showSearch(
+            onPressed: () async {
+             var res = await showSearch(
                   context: context,
                   delegate: DelegateCustom(),
               );
+             print("Item da pesquisa: " + res!.toString());
             },
           ),
 
