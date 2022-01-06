@@ -5,7 +5,15 @@ class DelegateCustom extends SearchDelegate<String> {
   @override
   List<Widget>? buildActions(BuildContext context) {
     return [
+      IconButton(
+        icon: Icon(
+            Icons.clear_rounded,
+            color: Colors.black,
+        ),
+        onPressed: (){
 
+        },
+      );
     ];
   }
 
