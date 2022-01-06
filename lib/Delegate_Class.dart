@@ -37,6 +37,10 @@ class DelegateCustom extends SearchDelegate<String> {
 
   @override
   Widget buildResults(BuildContext context) {
+    close(
+        context,
+        query,
+    );
     return Container();
   }
 
