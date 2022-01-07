@@ -28,7 +28,7 @@ class _InicioState extends State<Inicio> {
   Widget build(BuildContext context) {
 
     return FutureBuilder<List<VideoModel>>(
-        future: _getVideos(""),
+        future: _getVideos(widget.takeQ),
         builder: (context, snapshot){
 
           var widget;
