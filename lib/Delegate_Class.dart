@@ -56,7 +56,10 @@ class DelegateCustom extends SearchDelegate<String> {
       ];
 
     }
-
+    return ListView.builder(
+        itemBuilder: itemBuilder,
+        itemCount: suggList.length,
+    );
   }
 
 }
