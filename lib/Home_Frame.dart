@@ -21,6 +21,7 @@ class _HomeFrameState extends State<HomeFrame> {
   @override
   Widget build(BuildContext context) {
 
+    String _getQ = "";
     List<Widget> frames = [
       Inicio(),
       InHigh(),
@@ -50,6 +51,9 @@ class _HomeFrameState extends State<HomeFrame> {
                   delegate: DelegateCustom(),
               );
              print("Item da pesquisa: " + res!.toString());
+             setState(() {
+               _getQ = res;
+             });
             },
           ),
 
