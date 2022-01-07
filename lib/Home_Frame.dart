@@ -23,7 +23,7 @@ class _HomeFrameState extends State<HomeFrame> {
 
     String _getQ = "";
     List<Widget> frames = [
-      Inicio(),
+      Inicio(_getQ),
       InHigh(),
       Registrations(),
       Library(),
