@@ -5,7 +5,9 @@ import 'package:youtube/Models/Video_model.dart';
 import '../Credentials_API.dart';
 
 class Inicio extends StatefulWidget {
-  const Inicio({Key? key}) : super(key: key);
+
+  String takeQ;
+  Inicio(this.takeQ);
 
   @override
   _InicioState createState() => _InicioState();
