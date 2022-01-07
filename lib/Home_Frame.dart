@@ -8,11 +8,12 @@ import 'package:youtube/Frames/Registrations_Frame.dart';
 import 'package:youtube/Frames/Library_Frame.dart';
 
 class HomeFrame extends StatefulWidget {
-  const HomeFrame({Key? key}) : super(key: key);
 
   @override
   _HomeFrameState createState() => _HomeFrameState();
 }
+
+ String _getQ = "";
 
 var pickColor = Color.fromRGBO(212, 25, 15, 1);
 var _actualIndex = 3;
@@ -21,7 +22,6 @@ class _HomeFrameState extends State<HomeFrame> {
   @override
   Widget build(BuildContext context) {
 
-    String _getQ = "";
     List<Widget> frames = [
       Inicio(_getQ),
       InHigh(),
