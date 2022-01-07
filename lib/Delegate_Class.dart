@@ -55,7 +55,9 @@ class DelegateCustom extends SearchDelegate<String> {
 
       suggList= [
         "anime", "misterio", "herois", "aliens", "ovnis"
-      ];
+      ].where(
+          (text) => text.startsWith(query),
+      ).toList();
 
       return ListView.builder(
         itemBuilder: (context, index) {
@@ -64,7 +66,7 @@ class DelegateCustom extends SearchDelegate<String> {
             title: Text(
               "${suggList[index]}",
               style: TextStyle(
-                fontSize: 17,
+                fontSize: 18,
                 fontWeight: FontWeight.w600,
                 color: pickColor,
               ),
@@ -74,6 +76,10 @@ class DelegateCustom extends SearchDelegate<String> {
         },
         itemCount: suggList.length,
       );
+
+    }else{
+
+      return Container();
 
     }
 
