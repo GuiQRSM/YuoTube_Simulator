@@ -46,7 +46,17 @@ class DelegateCustom extends SearchDelegate<String> {
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    return Container();
+
+   List<String> suggList = [];
+
+    if(query.isNotEmpty){
+
+      suggList= [
+        "anime", "misterio", "herois", "aliens", "ovnis"
+      ];
+
+    }
+
   }
 
 }
