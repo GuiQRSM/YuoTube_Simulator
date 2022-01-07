@@ -56,17 +56,23 @@ class DelegateCustom extends SearchDelegate<String> {
       suggList= [
         "anime", "misterio", "herois", "aliens", "ovnis"
       ].where(
-          (text) => text.startsWith(query),
+          (text) => text.toLowerCase().startsWith(query.toLowerCase()),
       ).toList();
 
       return ListView.builder(
         itemBuilder: (context, index) {
 
           return ListTile(
+            onTap: (){
+              close(
+                  context,
+                  suggList[index],
+              );
+            },
             title: Text(
               "${suggList[index]}",
               style: TextStyle(
-                fontSize: 18,
+                fontSize: 17,
                 fontWeight: FontWeight.w600,
                 color: pickColor,
               ),
@@ -79,7 +85,16 @@ class DelegateCustom extends SearchDelegate<String> {
 
     }else{
 
-      return Container();
+      return Center(
+        child: Text(
+          "Nenhum resulatdo para a pesquisa",
+          style: TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.w500,
+          color: pickColor,
+        ),
+       ),
+      );
 
     }
 
