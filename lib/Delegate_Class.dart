@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 class DelegateCustom extends SearchDelegate<String> {
 
+  var pickColor = Color.fromRGBO(212, 25, 15, 1);
+
   @override
   List<Widget>? buildActions(BuildContext context) {
     return [
@@ -55,11 +57,26 @@ class DelegateCustom extends SearchDelegate<String> {
         "anime", "misterio", "herois", "aliens", "ovnis"
       ];
 
-    }
-    return ListView.builder(
-        itemBuilder: itemBuilder,
+      return ListView.builder(
+        itemBuilder: (context, index) {
+
+          return ListTile(
+            title: Text(
+              "${suggList[index]}",
+              style: TextStyle(
+                fontSize: 17,
+                fontWeight: FontWeight.w600,
+                color: pickColor,
+              ),
+            ),
+          );
+
+        },
         itemCount: suggList.length,
-    );
+      );
+
+    }
+
   }
 
 }
