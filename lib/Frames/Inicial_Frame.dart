@@ -55,6 +55,7 @@ class _InicioState extends State<Inicio> {
                           FlutterYoutube.playYoutubeVideoById(
                               apiKey: KEY_YT_API,
                               videoId: finalGet.id,
+                              autoPlay: true,
                           );
                         },
                         child: Column(
