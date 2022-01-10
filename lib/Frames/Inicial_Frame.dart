@@ -56,6 +56,7 @@ class _InicioState extends State<Inicio> {
                               apiKey: KEY_YT_API,
                               videoId: finalGet.id,
                               autoPlay: true,
+                              fullScreen: true
                           );
                         },
                         child: Column(
