@@ -50,35 +50,40 @@ class _InicioState extends State<Inicio> {
                       List<VideoModel> indexVideo = snapshot.data!;
                       VideoModel finalGet = indexVideo[index];
 
-                      return Column(
-                        children: <Widget>[
-                          Container(
-                            height: 200,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            fit: BoxFit.cover,
-                            image: NetworkImage(finalGet.pic),
-                          ),
+                      return GestureDetector(
+                        onTap: (){
+
+                        },
+                        child: Column(
+                          children: <Widget>[
+                            Container(
+                              height: 200,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: NetworkImage(finalGet.pic),
+                                ),
+                              ),
+                            ),
+                            ListTile(
+                              title: Text(
+                                "${finalGet.title}",
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black
+                                ),),
+                              subtitle: Text(
+                                "${finalGet.channel}",
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
-                      ),
-                        ListTile(
-                      title: Text(
-                          "${finalGet.title}",
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.black
-                      ),),
-                        subtitle: Text(
-                          "${finalGet.channel}",
-                          style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.black
-                          ),
-                        ),
-                      ),
-                        ],
                       );
 
                     },
