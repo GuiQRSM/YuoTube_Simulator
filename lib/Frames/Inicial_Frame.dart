@@ -52,7 +52,10 @@ class _InicioState extends State<Inicio> {
 
                       return GestureDetector(
                         onTap: (){
-
+                          FlutterYoutube.playYoutubeVideoById(
+                              apiKey: apiKey,
+                              videoId: videoId,
+                          );
                         },
                         child: Column(
                           children: <Widget>[
