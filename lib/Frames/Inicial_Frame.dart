@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:youtube/Frames/InHigh_Frame.dart';
 import 'package:youtube/Models/Video_model.dart';
 import '../Credentials_API.dart';
 import 'package:flutter_youtube/flutter_youtube.dart';
@@ -56,7 +55,7 @@ class _InicioState extends State<Inicio> {
                               apiKey: KEY_YT_API,
                               videoId: finalGet.id,
                               autoPlay: true,
-                              fullScreen: true
+                              fullScreen: false
                           );
                         },
                         child: Column(
