@@ -56,8 +56,7 @@ class _HomeFrameState extends State<HomeFrame> {
              });
             },
           ),
-
-          /*IconButton(
+          IconButton(
             icon: Icon(
               Icons.videocam_rounded,
               color: Colors.black,
@@ -74,7 +73,7 @@ class _HomeFrameState extends State<HomeFrame> {
             onPressed: (){
               print("Ícone de conta acionado!");
             },
-          ),*/
+          ),
 
         ],
       ),
