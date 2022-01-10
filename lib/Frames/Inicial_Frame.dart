@@ -54,7 +54,7 @@ class _InicioState extends State<Inicio> {
                         onTap: (){
                           FlutterYoutube.playYoutubeVideoById(
                               apiKey: apiKey,
-                              videoId: videoId,
+                              videoId: finalGet.id,
                           );
                         },
                         child: Column(
