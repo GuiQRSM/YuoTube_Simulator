@@ -25,6 +25,12 @@ class _InicioState extends State<Inicio> {
   }
 
   @override
+  void initState() {
+    super.initState();
+    print("First Statefull Widget method to be loaded.");
+  }
+
+  @override
   Widget build(BuildContext context) {
 
     return FutureBuilder<List<VideoModel>>(
