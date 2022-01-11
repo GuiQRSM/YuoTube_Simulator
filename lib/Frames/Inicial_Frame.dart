@@ -31,6 +31,12 @@ class _InicioState extends State<Inicio> {
   }
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    print("Second method to be called when loading the Statefull Widget.");
+  }
+
+  @override
   Widget build(BuildContext context) {
 
     return FutureBuilder<List<VideoModel>>(
