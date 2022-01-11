@@ -37,6 +37,12 @@ class _InicioState extends State<Inicio> {
   }
 
   @override
+  void didUpdateWidget(covariant Inicio oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    print("Method called in sync with the second method to update the Statefull Widget during loading");
+  }
+
+  @override
   Widget build(BuildContext context) {
 
     print("Third method to be called when loading the Statefull Widget.");
